@@ -8,6 +8,7 @@ Dataset available: a) http://cs.stanford.edu/people/alecmgo/trainingandtestdata.
 3. Sriram: Predicting the house prices in areas depending on the current rents, sale amount.
 
 4. Jayant: Admit preditor for graduate students with GRE/Toefl scores.
+"Graduate MIS_Student data -YocketApp | Kaggle" https://www.kaggle.com/hdarji/graduate-mis-student-data-yocketapp
 
 5. Sumeet: Movie recommedation system based on User' ratings.
 Dataset available: a) https://www.kaggle.com/rounakbanik/the-movies-dataset/download
