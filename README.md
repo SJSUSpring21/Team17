@@ -4,6 +4,7 @@
 Dataset available: a) http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip
                     b) https://docs.google.com/file/d/0B04GJPshIjmPRnZManQwWEdTZjg/edit
 2. Yusuf: Data analysis with Response code analysis, area hotspots & tourist recommendation.
+ When a person visits a new place as a tourist he/she is often unaware of the the nitty gritties of the locality. The goal of our application would be to inform the tourist of potentially dangerous areas(areas to  avoid at certain times of the days) based on the data present in the Boston Crimes Dataset(Mostly). The data would be analyzed and the tourist would be provided with a map with crime hotspots to see.
           Probable dataset:https://www.kaggle.com/ankkur13/boston-crime-data
 
 3. Sriram: Predicting the house prices in areas depending on the current rents, sale amount.
