@@ -1,6 +1,7 @@
 # Team17
  Project Ideas:
 1. Sumeet: Sentiment analysis with news, event, feeds or twitter trends.
+Problem Statement- To devise a sentimental analyzer for overcoming the challenges to identify the twitter tweets text sentiments (positive, negative) by implementing neural network using tensorflow.
 Dataset available: a) http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip
                     b) https://docs.google.com/file/d/0B04GJPshIjmPRnZManQwWEdTZjg/edit
 2. Yusuf: Data analysis with Response code analysis, area hotspots & tourist recommendation.
