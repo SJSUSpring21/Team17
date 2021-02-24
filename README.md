@@ -10,6 +10,7 @@ Abstract/Solution:
 3.	This score can be further enhanced by the vaccination status of the destination.
 
 Approach:
+
 Input: Travel destination entered by a user (City/State/Country)
 Process: The factors taken into consideration to calculate the score are: 
 		a) No. of cases in the that particular area.
