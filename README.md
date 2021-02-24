@@ -1,4 +1,4 @@
-# Team17
+# Team17 - Approved
 ### To Go or not to Go- Your post pandemic travel advisor
 
 **Introduction/ Motivation:**
