@@ -1,5 +1,5 @@
 # Team17
-##To Go or not to Go- Your post pandemic travel advisor
+### To Go or not to Go- Your post pandemic travel advisor
 
 **Introduction/ Motivation:**
 As the number of cases in different countries continues to fluctuate in an errant manner, changing rules and regulations have made travelers confused and skeptical whether to travel to a particular country or not. Our project aims to simplify and alleviate a prospective traveler concerns by providing a travel score. Analyzing the current number of cases and the status of vaccine distribution in the country the person plans to visit. Our project aims to provide a concise score which can act as a metric to decide whether a destination is safe to travel to or not.
@@ -10,17 +10,17 @@ As the number of cases in different countries continues to fluctuate in an erran
 3.	This score can be further enhanced by the vaccination status of the destination.
 
 **Approach:**
-•	Input: Travel destination entered by a user (City/State/Country)
-•	Process: The factors taken into consideration to calculate the score are: 
-o	No. of cases in the that particular area.
-o	No. of people vaccinated in that area.
-o	Population size and density of that area.
-•	Output: Percentage score showing how safe that destination is.
+* Input: Travel destination entered by a user (City/State/Country)
+* Process: The factors taken into consideration to calculate the score are: 
+- 	No. of cases in the that particular area.
+- 	No. of people vaccinated in that area.
+- 	Population size and density of that area.
+* Output: Percentage score showing how safe that destination is.
 
 **Personas:** 
 Our target audience would be  uncertain travelers, who cannot decide whether a particular destination is COVID safe or not.
 
 **Datasets:** 
-•	https://www.kaggle.com/gpreda/covid-world-vaccination-progress
-•	https://www.kaggle.com/imdevskp/corona-virus-report?select=country_wise_latest.csv
+*	https://www.kaggle.com/gpreda/covid-world-vaccination-progress
+*	https://www.kaggle.com/imdevskp/corona-virus-report?select=country_wise_latest.csv
 
