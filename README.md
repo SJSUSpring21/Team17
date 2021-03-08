@@ -25,4 +25,4 @@ Our target audience would be  uncertain travelers, who cannot decide whether a p
 *	https://www.kaggle.com/imdevskp/corona-virus-report?select=country_wise_latest.csv
 
 Architecture Diagram
-![](diagram/project_architecture.png)
+![](diagram/project_architecture.PNG)
