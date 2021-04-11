@@ -34,5 +34,5 @@ K-means : Groups similar data into clusters
 
 Linear Regression
 
-
+Logistic regression
 
