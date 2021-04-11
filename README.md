@@ -28,5 +28,11 @@ Architecture Diagram
 ![](diagram/project_architecture.PNG)
 
 
-Training Algorithms
+Training Algorithms Considered
+
+K-means : Groups similar data into clusters
+
+Linear Regression
+
+
 
