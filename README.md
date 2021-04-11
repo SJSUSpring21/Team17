@@ -26,3 +26,7 @@ Our target audience would be  uncertain travelers, who cannot decide whether a p
 
 Architecture Diagram
 ![](diagram/project_architecture.PNG)
+
+
+Training Algorithms
+
