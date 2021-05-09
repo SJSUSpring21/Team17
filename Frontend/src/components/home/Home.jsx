@@ -3,7 +3,7 @@
 /* eslint-disable array-callback-return */
 import React, { Redirect, Component } from 'react';
 import {
-  Row, Col, Button, ListGroup,
+  Row, Col, Button, ListGroup
 } from 'react-bootstrap';
 import { Divider } from '@material-ui/core';
 import axios from 'axios';
@@ -11,7 +11,7 @@ import numeral from 'numeral';
 import apiHost from '../../apiHost';
 import '../../App.css';
 import Map from './Map';
-import CountrySelect from './CountrySelect';
+import Select from './Select';
 
 import NavBar from '../landing/NavBar';
 
@@ -37,7 +37,7 @@ class Home extends Component {
                 Dashboard
               </h2>
               <div>
-              {/* <CountrySelect/> */}
+              <Select/>
               </div>
               <div style={{margin:"300px",width:'900px'}}>
               <Map />

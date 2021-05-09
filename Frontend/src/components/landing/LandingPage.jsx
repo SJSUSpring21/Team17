@@ -6,16 +6,21 @@ import {
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import '../../App.css';
-import splitimage from "../../images/world-map.jpg";
+import image from "../../images/world-map.jpg";
 
 export default function LandingPage() {
   return (
     <div>
       <div>
         <NavBar />
-        <div>
+        <Jumbotron>
+        <figure className="position-relative">
+        <img src={image} alt="background" className="img-fluid" width="100%" height="700px"/>
+        <figcaption>
+          Making Pandemic Travel Safer !
+        </figcaption>
+        </figure>
         {/* <img src={splitimage} width="100%" height="920px"/> */}
-        <h1 style={{color:"black"}}>To go or not to go ?<img src={splitimage} width="100%" height="920px"/></h1>
           {/* <Row>
             <Col md={{ span: 6, offset: 1 }}>
               <Jumbotron>
@@ -24,7 +29,7 @@ export default function LandingPage() {
               </Jumbotron>
             </Col>
           </Row> */}
-        </div>
+        </Jumbotron>
       </div>
     </div>
   );
