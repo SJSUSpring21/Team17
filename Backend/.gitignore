@@ -12,7 +12,7 @@
 /build
 
 # config file
-/config.local
+/config
 
 # misc
 .DS_Store

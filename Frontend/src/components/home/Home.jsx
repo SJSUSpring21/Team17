@@ -11,6 +11,7 @@ import numeral from 'numeral';
 import apiHost from '../../apiHost';
 import '../../App.css';
 import Map from './Map';
+import CountrySelect from './CountrySelect';
 
 import NavBar from '../landing/NavBar';
 
@@ -26,11 +27,6 @@ class Home extends Component {
     if (!localStorage.getItem('idToken')) {
       <Redirect to="/" />;
     }
-    let collectBalance = 0;
-    let payBalance = 0;
-    const payNames = [];
-    const payItems = [];
-    const collectItems = [];
     return (
       <div>
         <NavBar />
@@ -41,7 +37,7 @@ class Home extends Component {
                 Dashboard
               </h2>
               <div>
-                
+              {/* <CountrySelect/> */}
               </div>
               <div style={{margin:"300px",width:'900px'}}>
               <Map />
