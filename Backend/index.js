@@ -5,12 +5,14 @@ const login = require('./routes/login');
 const signup = require('./routes/signup');
 const profile = require('./routes/profile');
 const images = require('./routes/images');
+const predict = require('./routes/prediction');
 
 app.use('/api/ping', ping);
 app.use('/api/login', login);
 app.use('/api/signup', signup);
 app.use('/api/profile', profile);
 app.use('/api/images', images);
+app.use('/api/prediction', predict);
 
 require('./config/mongoose');
 
@@ -34,7 +36,7 @@ csvtojson()
 
         client
         .db("travel")
-        .collection("prediction")
+        .collection("predictions")
         .insertMany(csvData, (err, res) => {
             if (err) throw err;
 

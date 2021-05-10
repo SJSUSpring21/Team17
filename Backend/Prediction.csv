@@ -1,6 +1,6 @@
-﻿Date,Country/Region,Confirmed,Deaths,Recovered,Active,New cases,New deaths,New recovered,Prediction score
-5/9/2020,Australia,6939,97,6141,701,21,0,19,0.002853067
-5/9/2020,China,83990,4637,77552,1801,14,0,133,-0.066074403
+﻿Date,Country,Confirmed,Deaths,Recovered,Active,New_cases,New_deaths,New_recovered,Pscore
+05/09/2020,Australia,6939,97,6141,701,21,0,19,0.002853067
+05/09/2020,China,83990,4637,77552,1801,14,0,133,-0.066074403
 5/9/2020,India,62808,2101,19301,41406,3113,116,1414,0.041032701
 5/9/2020,New Zealand,1494,21,1371,102,2,0,3,-0.009803922
 5/9/2020,US,1314320,79976,212534,1021810,25733,1479,13541,0.011931768

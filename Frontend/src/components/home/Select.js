@@ -8,6 +8,9 @@ import {
   CountryRegionData,
 } from "react-country-region-selector";
 import Moment from 'moment';
+import axios from 'axios';
+import apiHost from '../../apiHost';
+
 // import "./Map.css"
 // import 'bootstrap/dist/css/bootstrap.css';
 // import 'react-bootstrap-country-select/dist/react-bootstrap-country-select.css';
@@ -16,7 +19,7 @@ import Moment from 'moment';
 class Select extends Component {
   constructor(props) {
     super(props);
-    this.state = { country: "", date: "", formatdate:"" };
+    this.state = { country: "", date: "", formatdate:"",message:'' };
   }
 
   selectCountry = (val) => {
@@ -29,7 +32,7 @@ class Select extends Component {
     });
   };
 
-  checkstatus =()=> {
+  checkstatus =async ()=> {
     let d1=this.state.date.split('-')
     let d2 = `${d1[1]}/${d1[2]}/${d1[0]}`
     console.log(d2)
@@ -41,6 +44,14 @@ class Select extends Component {
       date: d2,
     };
     console.log("-----check-----", data);
+    axios.defaults.withCredentials = true;
+    axios.defaults.headers.common.authorization = localStorage.getItem('idToken');
+    const message= await axios.post(`${apiHost}/api/prediction`,data);
+    console.log("------received message-------",message.data);
+    this.setState({
+      message: message.data.message
+    })
+    console.log("-----check state message----",this.state.message);
   }
 
   render() {

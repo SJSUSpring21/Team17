@@ -13,6 +13,8 @@ const {GROUPUPDATEIMAGEHANDLER}=require('./kafka/topics');
 const {GETPROFILEHANDLER}=require('./kafka/topics');
 const {UPDATEPROFILEHANDLER}=require('./kafka/topics');
 
+const {PREDICTIONSCORE}=require('./kafka/topics');
+
 //import services
 var loginHandler = require('./services/account/loginHandler');
 var signUpHandler = require('./services/account/signUpHandler');
@@ -24,6 +26,8 @@ var groupUpdateImageHandler= require('./services/images/groupUpdateImageHandler'
 
 var getProfileHandler= require('./services/users/getProfileHandler');
 var updateProfileHandler= require('./services/users/updateProfileHandler');
+
+var predictionscore= require('./services/users/predictionscore');
 
 function handleTopicRequest(topic_name, fname) {
   //var topic_name = 'root_topic';
@@ -66,5 +70,5 @@ handleTopicRequest(GROUPUPDATEIMAGEHANDLER, groupUpdateImageHandler);
 handleTopicRequest(GETPROFILEHANDLER, getProfileHandler);
 handleTopicRequest(UPDATEPROFILEHANDLER, updateProfileHandler);
 
-
+handleTopicRequest(PREDICTIONSCORE, predictionscore);
 

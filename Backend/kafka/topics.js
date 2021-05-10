@@ -5,6 +5,7 @@ const USERUPDATEIMAGEHANDLER ="userUpdateImageHandler";
 const GROUPUPDATEIMAGEHANDLER ="groupUpdateImageHandler";
 const GETPROFILEHANDLER="getProfileHandler";
 const UPDATEPROFILEHANDLER="updateProfileHandler";
+const PREDICTIONSCORE="predictionscore"
 
 module.exports={
     LOGINHANDLER,
@@ -14,4 +15,5 @@ module.exports={
     GROUPUPDATEIMAGEHANDLER,
     GETPROFILEHANDLER,
     UPDATEPROFILEHANDLER,
+    PREDICTIONSCORE
 };
