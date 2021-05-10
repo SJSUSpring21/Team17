@@ -55,6 +55,50 @@ class Select extends Component {
   }
 
   render() {
+    let card = null;
+
+    if(this.state.message==="Safe"){
+      card=(
+        <Card>
+        <Card.Header>SAFE</Card.Header>
+        <Card.Body>
+          <Card.Title>Travelling to {this.state.country} is Safe</Card.Title>
+          <Card.Text>
+          This country is safe to travel and here Active cases are low.
+          </Card.Text>
+          <Button variant="success">SAFE TO VISIT</Button>
+        </Card.Body>
+      </Card>
+      )
+    }
+    else if(this.state.message==="Unsafe"){
+      card=(
+        <Card>
+        <Card.Header>UNSAFE</Card.Header>
+        <Card.Body>
+          <Card.Title>Travelling to {this.state.country} is Unsafe</Card.Title>
+          <Card.Text>
+          This country is not safe to travel as the new cases are rising and active cases are high.
+          </Card.Text>
+          <Button variant="danger">UNSAFE TO VISIT</Button>
+        </Card.Body>
+      </Card>
+      )
+    }
+    else if(this.state.message==="Moderate"){
+      card=(
+        <Card>
+        <Card.Header>MODERATE</Card.Header>
+        <Card.Body>
+          <Card.Title>Check lockdown conditions before travelling to {this.state.country}</Card.Title>
+          <Card.Text>
+          This country is moderate to travel as here the new cases are emerging as same as recovered cases.
+          </Card.Text>
+          <Button variant="warning">CHECK LOCKDOWN CONDITIONS</Button>
+        </Card.Body>
+      </Card>
+      )
+    }
 
     // const { country, date } = this.state;
     // console.log("----country check----", this.state.country);
@@ -99,17 +143,7 @@ class Select extends Component {
                   <Divider style={{marginLeft:"25%", marginBottom:"20px"}} orientation="vertical" flexItem />
                   {/* <Col md={12}> */}
 <Col md={9}>
-                    <Card>
-                      <Card.Header>UNSAFE</Card.Header>
-                      <Card.Body>
-                        <Card.Title>UNSAFE COUNTRIES</Card.Title>
-                        <Card.Text>
-                          This countries are not safe to travel as the new cases
-                          are rising and active cases are high.
-                        </Card.Text>
-                        <Button variant="danger">UNSAFE TO VISIT</Button>
-                      </Card.Body>
-                    </Card>
+{card}
                   </Col>
                   {/* </Col> */}
                 </div>      
