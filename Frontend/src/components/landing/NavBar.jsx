@@ -4,7 +4,7 @@ import {
 } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-// import splitwiseLogo from '../../images/splitwise.svg';
+import Logo from '../../images/navbar_logo.svg';
 import { userLogout } from '../../actions/account/loginUserAction';
 
 class NavBar extends Component {
@@ -31,7 +31,7 @@ class NavBar extends Component {
     // let navLocation = null;
     nameDropDown = (
       <Dropdown>
-        <Dropdown.Toggle style={{'background-color': '#FF6337'}} id="dropdown-basic">
+        <Dropdown.Toggle style={{ backgroundColor: '#FF6337'}} id="dropdown-basic">
           &nbsp;
           {this.state.name}
         </Dropdown.Toggle>
@@ -49,8 +49,7 @@ class NavBar extends Component {
         <div className="collapse navbar-collapse navbar-right" id="navbarNav">
           <Navbar.Brand>
             <Link to="/home">
-            To go or not to go!?
-              {/* <img src={splitwiseLogo} width="100" height="auto" className="d-inline-block align-top" alt="Splitwise" /> */}
+              <h2 style={{color:"white"}}><img src={Logo} width="90" height="auto" className="d-inline-block align-top" alt="Splitwise" />TravelSafe</h2>
             </Link>
           </Navbar.Brand>
           <Nav className="mr-auto" />
@@ -62,21 +61,20 @@ class NavBar extends Component {
       navUser = (
         <div className="collapse navbar-collapse navbar-right" id="navbarNav">
           <Navbar.Brand>
-            <Link to="/">
-            To or not to go!?
-              {/* <img src={splitwiseLogo} width="100" height="auto" className="d-inline-block align-top" alt="Splitwise" /> */}
+          <Link to="/">
+              <h2 style={{color:"white"}}><img src={Logo} width="90" height="auto" className="d-inline-block align-top" alt="Splitwise" />TravelSafe</h2>
             </Link>
           </Navbar.Brand>
           <Nav className="mr-auto" />
-          <Nav.Item className="btn" style={{'background-color': '#FF6337',"margin-right": "15px","border-radius": "5px"}} variant="light"><Link to="/login">&nbsp;Login</Link></Nav.Item>
-          <Nav.Item className="btn" style={{'background-color': '#FF6337',"margin-right": "15px","border-radius": "5px"}} variant="light"><Link to="/signup">&nbsp;Sign Up</Link></Nav.Item>
+          <Nav.Item className="btn" style={{backgroundColor: '#FF6337',"margin-right": "15px","border-radius": "5px"}} variant="light"><Link to="/login">&nbsp;Login</Link></Nav.Item>
+          <Nav.Item className="btn" style={{backgroundColor: '#FF6337',"margin-right": "15px","border-radius": "5px"}} variant="light"><Link to="/signup">&nbsp;Sign Up</Link></Nav.Item>
         </div>
       );
     }
 
     return (
       <div>
-        <Navbar style={{ 'background-color': '#5BC5A7' }} variant="light">
+        <Navbar width="100%" style={{ backgroundColor: '#008B8b' }}>
           <Col xs lg="1">
             {'\u00A0'}
           </Col>
