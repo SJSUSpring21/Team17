@@ -19,7 +19,7 @@ export default function Map() {
 
   return (
     <div>
-       <WorldMap color="red" title="Top 10 Recommended Countries"  value-suffix="people" size="lg" data={data} />
+       <WorldMap color="red" title="Top 10 Recommended Countries"  value-suffix="people" size="responsive" data={data} />
     </div>
   )
 }

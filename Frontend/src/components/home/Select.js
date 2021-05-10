@@ -1,49 +1,63 @@
 import React from "react"
 import { Component } from "react";
-import {Form} from 'react-bootstrap';
+import {Form, FormLabel, Button} from 'react-bootstrap';
+import { CountryDropdown, RegionDropdown, CountryRegionData } from 'react-country-region-selector';
 // import "./Map.css"
 // import 'bootstrap/dist/css/bootstrap.css';
 // import 'react-bootstrap-country-select/dist/react-bootstrap-country-select.css';
 // var DatePicker = require("react-bootstrap-date-picker");
 
 class Select extends Component{
-  constructor() {
-    super();
-    this.state = {
-    };
-
+  constructor(props) {
+    super(props);
+    this.state = { country:'', date:''};
   }
 
-  // getInitialState(){
-  //   var value = new Date().toISOString();
-  //   return {
-  //     value: value
-  //   }
-  // }
+  selectCountry=(val)=>{
+    this.setState({country:val});
+    console.log("----country check----",this.state.country);
+  }
 
-  // handleChange(value, formattedValue) {
-  //   this.setState({
-  //     value: value, // ISO String, ex: "2016-11-19T12:00:00.000Z"
-  //     formattedValue: formattedValue // Formatted String, ex: "11/19/2016"
-  //   });
-  // }
-  // componentDidUpdate(){
-  //   // Access ISO String and formatted values from the DOM.
-  //   var hiddenInputElement = document.getElementById("example-datepicker");
-  //   console.log(hiddenInputElement.value); // ISO String, ex: "2016-11-19T12:00:00.000Z"
-  //   console.log(hiddenInputElement.getAttribute('data-formattedvalue')) // Formatted String, ex: "11/19/2016"
-  // }
+  selectDate=(val)=>{
+    this.setState({date:val});
+    console.log("-----date check-----------",this.state.date);
+  }
+
+  checkstatus(){
+    const data={
+      country: this.state.country,
+      date: this.state.date,
+    }
+    console.log("-----check-----",data);
+  }  
+
   render(){
+    const{country,date}=this.state;
     return (
-    <Form.Group controlId="dob">
+      <div style={{ marginLeft:"400px"}}>
+      <FormLabel>Select Country</FormLabel>
+      <br />
+      <CountryDropdown
+      value={country}
+      onChange={(val) => this.selectCountry(val)}
+      onClick={(val) => this.selectCountry(val)} />
+      <br/>
+      <br/>
+    <Form.Group>
       <Form.Label>Select Date</Form.Label>
       <Form.Control
        type="date"
-       name="dob"
-       placeholder="Select date">
-
+       name="date"
+       placeholder="Select date"
+       onChange={(val)=> this.selectDate(val)}
+       >
       </Form.Control>
     </Form.Group>
+    <br/>
+      <Button variant="info" onClick={this.checkstatus}>Check</Button>
+      <br/>
+      <br/>
+    </div>
     );
   }
 }

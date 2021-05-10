@@ -3,7 +3,7 @@
 /* eslint-disable array-callback-return */
 import React, { Redirect, Component } from 'react';
 import {
-  Row, Col, Button, ListGroup
+  Row, Col, Button, ListGroup, Card,
 } from 'react-bootstrap';
 import { Divider } from '@material-ui/core';
 import axios from 'axios';
@@ -36,9 +36,59 @@ class Home extends Component {
               <h2>
                 Dashboard
               </h2>
-              <div>
               <Select/>
-              </div>
+              <br/>
+              <br/>
+              <div style={{display: 'flex', flexDirection: 'row', width:"100%"}}>
+              <Col >
+              <Card>
+  <Card.Header>Featured</Card.Header>
+  <Card.Body>
+    <Card.Title>Special title treatment</Card.Title>
+    <Card.Text>
+      With supporting text below as a natural lead-in to additional content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+</Col>
+<Col>
+<Card>
+  <Card.Header>Featured</Card.Header>
+  <Card.Body>
+    <Card.Title>Special title treatment</Card.Title>
+    <Card.Text>
+      With supporting text below as a natural lead-in to additional content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+</Col>
+<Col>
+<Card>
+  <Card.Header>Featured</Card.Header>
+  <Card.Body>
+    <Card.Title>Special title treatment</Card.Title>
+    <Card.Text>
+      With supporting text below as a natural lead-in to additional content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+</Col>
+<Col>
+<Card>
+  <Card.Header>Featured</Card.Header>
+  <Card.Body>
+    <Card.Title>Special title treatment</Card.Title>
+    <Card.Text>
+      With supporting text below as a natural lead-in to additional content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+</Col>
+</div>
               <div style={{margin:"300px",width:'900px'}}>
               <Map />
               </div>

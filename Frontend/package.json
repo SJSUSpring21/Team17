@@ -18,6 +18,7 @@
     "react-bootstrap-country-select": "^0.7.12",
     "react-bootstrap-date-picker": "^5.1.0",
     "react-bootstrap-icons": "^1.4.0",
+    "react-country-region-selector": "^3.0.2",
     "react-devtools": "^4.10.1",
     "react-dom": "^17.0.2",
     "react-moment": "^1.1.1",
