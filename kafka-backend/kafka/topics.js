@@ -6,8 +6,8 @@ const GROUPUPDATEIMAGEHANDLER ="groupUpdateImageHandler";
 const GETPROFILEHANDLER="getProfileHandler";
 const UPDATEPROFILEHANDLER="updateProfileHandler";
 const PREDICTIONSCORE="predictionscore";
-const PREDICTIONSCOREDATE="predictionscoredate"
-
+const PREDICTIONSCOREDATE="predictionscoredate";
+const PREDICTIONACTIVEDATE="predictionactivedate"
 
 module.exports={
     LOGINHANDLER,
@@ -18,5 +18,6 @@ module.exports={
     GETPROFILEHANDLER,
     UPDATEPROFILEHANDLER,
     PREDICTIONSCORE,
-    PREDICTIONSCOREDATE
+    PREDICTIONSCOREDATE,
+    PREDICTIONACTIVEDATE
 };

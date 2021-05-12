@@ -8,7 +8,8 @@ import axios from "axios";
 import numeral from "numeral";
 import apiHost from "../../apiHost";
 import "../../App.css";
-import Map from "./Map";
+import ActiveMap from "./ActiveMap";
+import PredictMap from "./PredictMap"
 import Select from "./Select";
 
 import NavBar from "../landing/NavBar";
@@ -86,7 +87,24 @@ class Home extends Component {
                   </Col>
                 </div>
               </Row>
-              <Map />
+              <br/>
+              <br/>
+              <Row>
+              <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    width: "100%",
+                  }}
+                >
+              <Col md={7}>
+              <PredictMap/>
+              </Col>
+              <Col md={7}>
+              <ActiveMap />
+              </Col>
+              </div>
+              </Row>
             </Row>
           </Col>
         </Row>

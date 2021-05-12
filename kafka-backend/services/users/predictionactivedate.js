@@ -189,6 +189,7 @@ const code= {
     Zambia: 'zm',
     Zimbabwe: 'zw'
   }
+
 const handle_request = async (msg, callback) => {
     console.log("inside predict date service");
     const res = {};
@@ -196,7 +197,9 @@ const handle_request = async (msg, callback) => {
     User.findById(msg.userId)
         .exec((err,user)=>{
             if(user){
-                Prediction.find({$and:[{ Date: msg.date}]}).sort({"Pscore":1}).limit(20)
+                // console.log("inside user");
+                // db.vehicleinformation.find({}).sort({"Pscore":-1}).limit(10)
+                Prediction.find({$and:[{ Date: msg.date}]}).sort({"Active":-1}).limit(20)
                     .exec((err,predict)=>{
                         //console.log(predict)
                         if(predict){
@@ -204,7 +207,7 @@ const handle_request = async (msg, callback) => {
                             for(let i in predict){
                                 set.push({
                                     country: code[predict[i].Country],
-                                    value: predict[i].Pscore
+                                    value: predict[i].Active
                                 })
                             }
                             console.log("-----checking set-------", set);
