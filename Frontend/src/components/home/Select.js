@@ -39,6 +39,7 @@ class Select extends Component {
     this.setState({
       formatdate: d2,
     })
+    localStorage.setItem('date', d2);
     const data = {
       country: this.state.country,
       date: d2,

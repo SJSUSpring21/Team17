@@ -33,6 +33,7 @@ class Home extends Component {
               <h2>Dashboard</h2>
               <Select />
               <Row>
+              <p style={{fontSize:"2em", marginLeft:"60%"}}>DEMO CARDS</p>
                 <br />
                 <br />
                 <div

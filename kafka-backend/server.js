@@ -14,6 +14,7 @@ const {GETPROFILEHANDLER}=require('./kafka/topics');
 const {UPDATEPROFILEHANDLER}=require('./kafka/topics');
 
 const {PREDICTIONSCORE}=require('./kafka/topics');
+const {PREDICTIONSCOREDATE}=require('./kafka/topics');
 
 //import services
 var loginHandler = require('./services/account/loginHandler');
@@ -28,6 +29,8 @@ var getProfileHandler= require('./services/users/getProfileHandler');
 var updateProfileHandler= require('./services/users/updateProfileHandler');
 
 var predictionscore= require('./services/users/predictionscore');
+var predictionscoredate= require('./services/users/predictionscoredate');
+
 
 function handleTopicRequest(topic_name, fname) {
   //var topic_name = 'root_topic';
@@ -71,4 +74,5 @@ handleTopicRequest(GETPROFILEHANDLER, getProfileHandler);
 handleTopicRequest(UPDATEPROFILEHANDLER, updateProfileHandler);
 
 handleTopicRequest(PREDICTIONSCORE, predictionscore);
+handleTopicRequest(PREDICTIONSCOREDATE, predictionscoredate);
 

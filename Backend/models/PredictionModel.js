@@ -11,6 +11,9 @@ const predictSchema = new Schema({
     type: String,
     required: true,
   },
+  Code:{
+    type:String,
+  },
   Confirmed: {
     type: Number,
   },
