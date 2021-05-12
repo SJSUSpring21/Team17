@@ -155,7 +155,7 @@ class Profile extends Component {
                   </Form.Group>
                   &nbsp;&nbsp;&nbsp;
                 </Form.Row>
-                <Form.Row>
+                {/* <Form.Row>
                   <Form.Group as={Col} md="4">
                     <Form.Label>Default Currency</Form.Label>
                     <Form.Control
@@ -175,7 +175,7 @@ class Profile extends Component {
                       Please select any currency from dropdown.
                     </Form.Control.Feedback>
                   </Form.Group>
-                </Form.Row>
+                </Form.Row> */}
                 <Form.Row>
                   <Form.Group as={Col} md="4">
                     <Form.Label>Email Address</Form.Label>

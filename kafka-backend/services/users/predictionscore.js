@@ -12,17 +12,17 @@ const handle_request = async (msg, callback) => {
                 Prediction.find({$and:[{Country:msg.country},{ Date: msg.date}]})
                     .exec((err,predict)=>{
                         //console.log(predict)
-                        if(predict){
+                        if(predict && predict.length > 0){
                             console.log("inside predict",predict[0].Pscore);
                             const score=predict[0].Pscore;
-                            if(score<0){
+                            if(score<=-0.001){
                                 res.data={
                                     message:"Safe"
                                 }
                                 res.status = 200;
                                 callback(null, res);
                             }
-                            else if(score===0){
+                            else if(score>-0.001 && score<0.001){
                                 res.data={
                                     message:"Moderate"
                                 }
@@ -41,7 +41,7 @@ const handle_request = async (msg, callback) => {
                             console.log(err);
                             res.status = 201;
                             res.data = {
-                                message:"",
+                                message:"No Data",
                                 response:err
                             };
                             callback(null, res);

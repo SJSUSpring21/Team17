@@ -20,6 +20,7 @@ class NavBar extends Component {
     localStorage.removeItem('idToken');
     localStorage.removeItem('name');
     localStorage.removeItem('email');
+    localStorage.removeItem('date');
     window.location.reload();
     window.location.assign('/');
     this.props.userLogout();
@@ -66,8 +67,8 @@ class NavBar extends Component {
             </Link>
           </Navbar.Brand>
           <Nav className="mr-auto" />
-          <Nav.Item className="btn" style={{backgroundColor: '#FF6337',"margin-right": "15px","border-radius": "5px"}} variant="light"><Link to="/login">&nbsp;Login</Link></Nav.Item>
-          <Nav.Item className="btn" style={{backgroundColor: '#FF6337',"margin-right": "15px","border-radius": "5px"}} variant="light"><Link to="/signup">&nbsp;Sign Up</Link></Nav.Item>
+          <Nav.Item className="btn" style={{backgroundColor: '#FF6337',"marginRight": "15px","borderRadius": "5px"}} variant="light"><Link to="/login">&nbsp;Login</Link></Nav.Item>
+          <Nav.Item className="btn" style={{backgroundColor: '#FF6337',"marginRight": "15px","borderRadius": "5px"}} variant="light"><Link to="/signup">&nbsp;Sign Up</Link></Nav.Item>
         </div>
       );
     }

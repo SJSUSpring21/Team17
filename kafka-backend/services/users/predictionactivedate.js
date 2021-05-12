@@ -139,7 +139,7 @@ const code= {
     Portugal: 'pt',
     Qatar: 'qa',
     Romania: 'ro',
-    Russia: 'ru',
+    'Russian Federation': 'ru',
     Rwanda: 'rw',
     'Saint Kitts and Nevis': 'kn',
     'Saint Lucia': 'lc',
@@ -178,7 +178,7 @@ const code= {
     Uganda: 'ug',
     Ukraine: 'uk',
     'United Arab Emirates': 'ae',
-    'United Kingdom': 'uk',
+    'United Kingdom': 'gb',
     Uruguay: 'uy',
     Uzbekistan: 'uz',
     Venezuela: 've',
@@ -190,6 +190,10 @@ const code= {
     Zimbabwe: 'zw'
   }
 
+const sortLimit = (predict, limit) => {
+    predict.sort((a, b) => (parseInt(a.Active) > parseInt(b.Active)) ? 1 : -1)
+    return predict.slice(predict.length-limit, predict.length)
+}
 const handle_request = async (msg, callback) => {
     console.log("inside predict date service");
     const res = {};
@@ -199,10 +203,11 @@ const handle_request = async (msg, callback) => {
             if(user){
                 // console.log("inside user");
                 // db.vehicleinformation.find({}).sort({"Pscore":-1}).limit(10)
-                Prediction.find({$and:[{ Date: msg.date}]}).sort({"Active":-1}).limit(20)
+                Prediction.find({$and:[{ Date: msg.date}]})
                     .exec((err,predict)=>{
-                        //console.log(predict)
+                        console.log(predict)
                         if(predict){
+                            predict = sortLimit(predict,20)
                             let set = [];
                             for(let i in predict){
                                 set.push({

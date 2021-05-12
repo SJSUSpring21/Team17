@@ -27,7 +27,7 @@ export default function PredictMap() {
         <Button variant="info" onClick={predictiondate}>
         Top 20 Recommended Country by Predict Score
         </Button>
-       <WorldMap color="red"  value-suffix="people" size="responsive" data={data} />
+       <WorldMap color="green"  value-suffix="people" size="responsive" data={data} />
     </div>
   )
 }

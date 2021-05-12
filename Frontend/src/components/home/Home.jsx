@@ -44,7 +44,7 @@ class Home extends Component {
                     width: "100%",
                   }}
                 >
-                  <Col md={9}>
+                  <Col md={5}>
                     <Card>
                       <Card.Header>SAFE</Card.Header>
                       <Card.Body>
@@ -57,7 +57,7 @@ class Home extends Component {
                       </Card.Body>
                     </Card>
                   </Col>
-                  <Col md={9}>
+                  <Col md={5}>
                     <Card>
                       <Card.Header>MODERATE</Card.Header>
                       <Card.Body>
@@ -72,7 +72,7 @@ class Home extends Component {
                       </Card.Body>
                     </Card>
                   </Col>
-                  <Col md={9}>
+                  <Col md={5}>
                     <Card>
                       <Card.Header>UNSAFE</Card.Header>
                       <Card.Body>
@@ -82,6 +82,18 @@ class Home extends Component {
                           are rising and active cases are high.
                         </Card.Text>
                         <Button variant="danger">UNSAFE TO VISIT</Button>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col md={5}>
+                    <Card>
+                      <Card.Header>NO DATA</Card.Header>
+                      <Card.Body>
+                        <Card.Title>NO DATA COUNTRIES</Card.Title>
+                        <Card.Text>
+                        Unfornately, no data was available for this country.
+                        </Card.Text>
+                        <Button variant="light">NO DATA !</Button>
                       </Card.Body>
                     </Card>
                   </Col>

@@ -34,6 +34,9 @@ class Select extends Component {
 
   checkstatus =async ()=> {
     let d1=this.state.date.split('-')
+    for (let i in d1){
+      d1[i] = parseInt(d1[i])
+    }
     let d2 = `${d1[1]}/${d1[2]}/${d1[0]}`
     console.log(d2)
     this.setState({
@@ -96,6 +99,20 @@ class Select extends Component {
           This country is moderate to travel as here the new cases are emerging as same as recovered cases.
           </Card.Text>
           <Button variant="warning">CHECK LOCKDOWN CONDITIONS</Button>
+        </Card.Body>
+      </Card>
+      )
+    }
+    else if(this.state.message==="No Data"){
+      card=(
+        <Card>
+        <Card.Header>NO DATA</Card.Header>
+        <Card.Body>
+          <Card.Title>Sorry but no data on {this.state.country}</Card.Title>
+          <Card.Text>
+          Unfornately, no data was available for this country.
+          </Card.Text>
+          <Button variant="light">NO DATA !</Button>
         </Card.Body>
       </Card>
       )
