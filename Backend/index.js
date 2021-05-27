@@ -23,29 +23,29 @@ const csvtojson = require("csvtojson");
 const URL= require('./config/config');
 // let url=mongoDB;
 
-csvtojson()
-  .fromFile("Prediction.csv")
-  .then(csvData => {
-    // console.log(csvData);
+// csvtojson()
+//   .fromFile("Prediction.csv")
+//   .then(csvData => {
+//     // console.log(csvData);
 
-    mongodb.connect(
-        URL.mongoDB,
-      { useNewUrlParser: true, useUnifiedTopology: true },
-      (err, client) => {
-        if (err) throw err;
+//     mongodb.connect(
+//         URL.mongoDB,
+//       { useNewUrlParser: true, useUnifiedTopology: true },
+//       (err, client) => {
+//         if (err) throw err;
 
-        client
-        .db("travel")
-        .collection("predictions")
-        .insertMany(csvData, (err, res) => {
-            if (err) throw err;
+//         client
+//         .db("travel")
+//         .collection("predictions")
+//         .insertMany(csvData, (err, res) => {
+//             if (err) throw err;
 
-            console.log(`Inserted: ${res.insertedCount} rows`);
-            client.close();
-          });
-      }
-    );
-  });
+//             console.log(`Inserted: ${res.insertedCount} rows`);
+//             client.close();
+//           });
+//       }
+//     );
+//   });
 
 const port = process.env.PORT || 3001;
 

@@ -1,5 +1,5 @@
 # Team17 - Approved
-### To Go or not to Go- Your post pandemic travel advisor
+### TravelSafe- Making Pandemic Travel Safer !
 
 **Introduction/ Motivation:**
 As the number of cases in different countries continues to fluctuate in an errant manner, changing rules and regulations have made travelers confused and skeptical whether to travel to a particular country or not. Our project aims to simplify and alleviate a prospective traveler concerns by providing a travel score. Analyzing the current number of cases and the status of vaccine distribution in the country the person plans to visit. Our project aims to provide a concise score which can act as a metric to decide whether a destination is safe to travel to or not.
@@ -25,8 +25,25 @@ Our target audience would be  uncertain travelers, who cannot decide whether a p
 *	https://www.kaggle.com/imdevskp/corona-virus-report?select=country_wise_latest.csv
 
 Architecture Diagram
-![](diagram/project_architecture.PNG)
+![](Images/project_architecture.PNG)
 
+Landing Page
+![](Images/272_landing.png)
+
+Login Page
+![](Images/272_login.png)
+
+Signup Page
+![](Images/272_signup.png)
+
+Home Page
+![](Images/272_home.png)
+
+Top 20 Recommended Safe Countries based on Predicted Score
+![](272_map.png)
+
+Top 20 Active cases on that date
+![](272_map2.png)
 
 Training Algorithms Considered
 
