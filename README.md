@@ -40,10 +40,10 @@ Home Page
 ![](Images/272_home.png)
 
 Top 20 Recommended Safe Countries based on Predicted Score
-![](272_map.png)
+![](Images/272_map.png)
 
 Top 20 Active cases on that date
-![](272_map2.png)
+![](Images/272_map2.png)
 
 Training Algorithms Considered
 
