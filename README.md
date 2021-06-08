@@ -1,5 +1,5 @@
-# Team17 - Approved
-### TravelSafe- Making Pandemic Travel Safer !
+
+# TravelSafe- Making Pandemic Travel Safer !
 
 **Introduction/ Motivation:**
 As the number of cases in different countries continues to fluctuate in an errant manner, changing rules and regulations have made travelers confused and skeptical whether to travel to a particular country or not. Our project aims to simplify and alleviate a prospective traveler concerns by providing a travel score. Analyzing the current number of cases and the status of vaccine distribution in the country the person plans to visit. Our project aims to provide a concise score which can act as a metric to decide whether a destination is safe to travel to or not.
